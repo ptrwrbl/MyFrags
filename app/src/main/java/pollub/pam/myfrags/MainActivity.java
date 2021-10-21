@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
 
@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity{
 
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.add(R.id.frame1, fragment1);
-        transaction.add(R.id.frame2, fragment2);
-        transaction.add(R.id.frame3, fragment3);
-        transaction.add(R.id.frame4, fragment4);
+        transaction.add(R.id.frame4, fragment2);
+        transaction.add(R.id.frame2, fragment3);
+        transaction.add(R.id.frame3, fragment4);
         transaction.addToBackStack(null);
         transaction.commit();
     }
