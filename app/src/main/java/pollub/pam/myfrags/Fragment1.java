@@ -10,16 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Fragment1#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class Fragment1 extends Fragment {
-
-    public Fragment1() {
-        // Required empty public constructor
-    }
+    public Fragment1() {}
 
     public interface OnButtonClickListener {
         public void onButtonClickShuffle();
@@ -32,17 +24,6 @@ public class Fragment1 extends Fragment {
 
     public void setOnButtonClickListener(OnButtonClickListener callback) {
         this.callback = callback;
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @return A new instance of fragment Fragment1.
-     */
-    public static Fragment1 newInstance() {
-        Fragment1 fragment = new Fragment1();
-        return fragment;
     }
 
     @Override
